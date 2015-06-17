@@ -11,5 +11,6 @@ Redmine::Plugin.register :redmine_delivery_list do
     permission :manage_delivery_list, :delivery_list => [:new, :edit, :create, :update, :destroy, :preview],
     :require => :member
   end
-  
+
+  menu :project_menu, :delivery_list, { :controller => 'delivery_list', :action => 'index'}, :param => :project_id
 end
