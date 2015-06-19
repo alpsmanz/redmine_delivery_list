@@ -1,6 +1,6 @@
 # English strings go here for Rails i18n
 en:
   label_delivery_list: "delivery list"
-  project_module_delivery_list: "delivery list　Plugin"
+  project_module_delivery_list: "delivery list Plugin"
   permission_view_delivery_list: "view delivery list"
   permission_manage_delivery_list: "manage delivery list"
