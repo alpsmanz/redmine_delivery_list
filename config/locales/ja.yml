@@ -1,0 +1,6 @@
+# Japanase strings go here for Rails i18n
+ja:
+  label_delivery_list: "納品一覧"
+  project_delivery_list: "納品一覧プラグイン"
+  permission_view_delivery_list: "納品一覧の閲覧"
+  permission_manage_delivery_list: "納品一覧の管理"
