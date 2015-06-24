@@ -4,3 +4,10 @@ en:
   project_module_delivery_list: "delivery list Plugin"
   permission_view_delivery_list: "view delivery list"
   permission_manage_delivery_list: "manage delivery list"
+
+  label_delivery_date: "delivery date"
+  label_project_name: "project name"
+  label_delivery_partner: "delivery partner"
+  label_delivery_item: "delivery item"
+  label_details: "details"
+

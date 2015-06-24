@@ -4,3 +4,9 @@ ja:
   project_module_delivery_list: "納品一覧プラグイン"
   permission_view_delivery_list: "納品一覧の閲覧"
   permission_manage_delivery_list: "納品一覧の管理"
+
+  label_delivery_date: "納品日"
+  label_project_name: "プロジェクト"
+  label_delivery_partner: "納品先"
+  label_delivery_item: "案件名"
+  label_details: "詳細"

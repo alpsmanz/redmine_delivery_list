@@ -1,1 +1,25 @@
-<h2>DeliveryListController#index</h2>
+<% if (@delivery_list.blank?)%>
+	<p class="nodata"><%= l(:label_no_data)%>
+<% else %>
+	<!-- 登録された納品日一覧を表示  -->
+	<table class="list">
+		<thead>
+			<th><%=h l(:label_delivery_date)%></th>
+			<th><%=h l(:label_project_name)%></th>
+			<th><%=h l(:label_delivery_partner)%></th>
+			<th><%=h l(:label_delivery_item)%></th>
+			<th></th>
+		</thead>
+		<tbody>
+			<% @delivery_list.each do |item| %>
+				<tr class="<%= cycle('odd', 'even') %>">
+					<td align="center"><%=format_time(item.delivery_date) %></td>
+					<td align="center"><%=item.project_name %></td>
+					<td align="center"><%=@partners_disp_name[item.partner_id - 1]%></td>
+					<td align="center"><%=item.delivery_item %></td>
+					<td align="center"><%=link_to l(:label_details), project_delivery_list_path(@project, item), :class => 'icon icon-report'%></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+<% end %>

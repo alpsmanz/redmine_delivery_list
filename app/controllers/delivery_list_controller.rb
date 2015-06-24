@@ -9,6 +9,9 @@ class DeliveryListController < ApplicationController
   before_filter :find_project, :authorize
 
   def index
+    # 納品一覧を取得する(本日より先の納品一覧)
+    @delivery_list = DeliveryList.where("delivery_date >= ?", Date.today);
+    @partners_disp_name = DeliveryPartners.find(:all).map(&:disp_name);
   end
 
   def new
